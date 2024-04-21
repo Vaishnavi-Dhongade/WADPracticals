@@ -1,0 +1,260 @@
+HTML CODE :- 
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Admin Dashboard</title>
+
+    <!-- CSS Linking -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="side-menu">
+        <div class="brand-name">
+            <h1>VPKBIET</h1>
+        </div>
+        <ul>
+            <li>Dashboard</li>
+            <li>Student</li>
+            <li>Teacher</li>
+            <li>Examination</li>
+            <li>Activities</li>
+            <li>Events</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="header">
+            <div class="nav">
+                <div class="college-name">
+                    <h1>VPKBIET, Baramati</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="cards">
+                <div class="card">
+                    <div class="box">
+                        <p>Total Students</p>
+                        <p>1500</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <p>Total Students</p>
+                        <p>1500</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <p>Total Students</p>
+                        <p>1500</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <div class="stastical-cards">
+                <h3>Student Enrollment Stastics</h3>
+                <div class="content-1">
+                    <div class="column">
+                        <p>Year</p>
+                        <hr>
+                        <p>2022</p>
+                        <p>2023</p>
+                        <p>2024</p>
+                    </div>
+                    <div class="column">
+                        <p>Number of Students</p>
+                        <hr>
+                        <p>500</p>
+                        <p>800</p>
+                        <p>1500</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="stastical-cards">
+                <h3>Recent Announcements</h3>
+                <div class="lists">
+                    <ul>
+                        <li>Important notice regrading exam schedule.</li>
+                        <li>Library timings revised.</li>
+                        <li>Registration for spring semester now open.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="authority">
+            <div class="authority-body">
+                <strong>Authorities</strong>
+                <p>All rights are reserved to principal,VPKBIET</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+CSS CODE :-
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    min-height: 100vh;
+}
+
+.side-menu{
+    position: fixed;
+    background-color: crimson;
+    width: 40vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-menu .brand-name h1{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.side-menu li{
+    font-size: 20px;
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.side-menu li:hover{
+    color: rgb(242, 25, 69);
+    background-color: white;
+}
+
+.container{
+    position: absolute;
+    right: 0;
+    width: 80vw;
+    height: 100vh;
+}
+
+.container .header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 81vw;
+    height: 12vh;
+    background: white;
+    align-items: center;
+    justify-content: center;
+    box-shadow:  0 4px 8px 0 rgba(0,0,0,0.1);
+}
+
+.container .header .nav{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .college-name{
+    margin-top: 1.5em;
+    margin-left: 1.5em;
+    text-align: center;
+}
+
+.container .content{
+    position: relative;
+    margin-top: 10vh;
+    /* min-height: 50vh; */
+}
+
+.container .content .cards{
+    padding: 20px 15px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container .content .cards .card{
+    width: 300px;
+    height: 150px;
+    background: rgb(229, 180, 189);
+    margin: 20px 45px;
+}
+
+.card .box p{
+    margin: 20px 40px;
+}
+
+.card-container {
+    display: flex;
+    margin: 10px;
+}
+
+.stastical-cards{
+    margin-left: 3.4em;
+    width: 510px;
+    height: 230px;
+    padding: 20px;
+    background-color: rgb(243, 231, 228); 
+}
+
+.stastical-cards strong{
+    margin-top: 0;
+}
+
+.content-1{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.column{
+    flex: 1;
+}
+
+.column p {
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.lists li {
+    margin: 10px 0px 10px 30px;
+}
+
+.authority{
+    margin: 1.5em 0em 0em 3.9em;
+    width: 88%;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.authority-body{
+    margin: 2em;
+}
+
+.authority-body p{
+    margin-top: 1em;
+}
+
+
+
